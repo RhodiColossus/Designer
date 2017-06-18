@@ -15,6 +15,11 @@ public:
     explicit MyDialogWindow(QWidget *parent = 0);
     ~MyDialogWindow();
 
+private slots:
+    void on_CloseButton_clicked();
+    void OkEnable();
+
+
 private:
     Ui::MyDialogWindow *ui;
 };

@@ -1,11 +1,23 @@
-#include "mainwindow.h"
+
 #include <QApplication>
+#include <mydialogwindow.h>
+
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+
+
+MyDialogWindow *wnd =new MyDialogWindow();
+
+wnd->show();
+
+
+
+
+
+
+
 
     return a.exec();
 }
